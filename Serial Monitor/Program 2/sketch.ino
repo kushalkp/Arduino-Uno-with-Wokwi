@@ -1,4 +1,4 @@
-int counter = 0;
+int counter = 0; // Declare a counter variable
 
 void setup()
 {
