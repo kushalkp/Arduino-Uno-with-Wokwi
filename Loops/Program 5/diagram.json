@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Kushal Ponugoti",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": -67.2, "left": 124.2, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -170.4,
+      "left": 165,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [ [ "bz1:2", "uno:5", "green", [ "v0" ] ], [ "gnd1:GND", "bz1:1", "black", [ "v0" ] ] ],
+  "dependencies": {}
+}
