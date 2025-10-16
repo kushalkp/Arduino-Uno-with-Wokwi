@@ -14,8 +14,8 @@ void loop()
 // Move LED lights forward (left to right)
   for (int i = 0; i < ledCount; i++)
   {
-    digitalWrite(leds[i], HIGH);
+    digitalWrite(leds[i], HIGH); // Turn LED on
     delay(700);
-    digitalWrite(leds[i], LOW);
+    digitalWrite(leds[i], LOW); // Turn LED off
   }
 }
