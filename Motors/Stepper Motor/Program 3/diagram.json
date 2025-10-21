@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Kushal Ponugoti",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 87, "left": 18.6, "attrs": {} },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper1",
+      "top": -178.79,
+      "left": 96.43,
+      "attrs": { "size": "17", "arrow": "orange" }
+    }
+  ],
+  "connections": [
+    [ "stepper1:A-", "uno:11", "green", [ "v0" ] ],
+    [ "stepper1:A+", "uno:10", "green", [ "v0" ] ],
+    [ "stepper1:B+", "uno:9", "green", [ "v0" ] ],
+    [ "stepper1:B-", "uno:8", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
