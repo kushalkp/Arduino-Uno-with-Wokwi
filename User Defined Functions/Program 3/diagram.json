@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Kushal Ponugoti",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc1",
+      "top": 252.2,
+      "left": 37.8,
+      "attrs": {}
+    }
+  ],
+  "connections": [ [ "ntc1:OUT", "uno:A0", "green", [ "h0" ] ], [ "ntc1:GND", "uno:GND.3", "black", [ "h0" ] ] ],
+  "dependencies": {}
+}
